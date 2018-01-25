@@ -1,7 +1,7 @@
-const read = file => {
-  const fs = require('fs');
-  const conf = { encoding: 'utf8' };
+const fs = require('fs');
+const conf = { encoding: 'utf8' };
 
+const read = file => {
   return new Promise((done, fail) => {
     fs.readFile(file, conf, (err, content) => {
       if (err) {
@@ -14,9 +14,6 @@ const read = file => {
 };
 
 const write = (file, data) => {
-  const fs = require('fs');
-  const conf = { encoding: 'utf8' };
-
   return new Promise((done, fail) => {
     fs.writeFile(file, data, conf, (err) => {
       if (err) {

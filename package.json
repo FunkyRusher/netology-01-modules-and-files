@@ -1,11 +1,6 @@
 {
   "name": "netology-01-modules-and-files",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "description": "Домашнее задание к лекции 1.1 Модули и работа с файлами",
+  "author": "FunkyRusher"
 }
