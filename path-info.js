@@ -10,7 +10,7 @@ module.exports = (path, callback) => {
       let result = { path };
 
       if (stats.isFile()) {
-        result.type = "file";
+        result.type = 'file';
 
         fs.readFile(path, conf, (err, content) => {
           if (err) {
@@ -23,7 +23,7 @@ module.exports = (path, callback) => {
           }
         });
       } else if (stats.isDirectory()) {
-        result.type = "directory";
+        result.type = 'directory';
 
         fs.readdir(path, (err, files) => {
           if (err) {
